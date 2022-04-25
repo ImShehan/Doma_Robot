@@ -94,7 +94,7 @@ I have lots of handy features such as:
 ‣ Approvals and much more.
 
 So what are you waiting for?
-*Add me in your groups and give me full rights to make me function well.*
+*𝐀𝐝𝐝 𝐦𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩𝐬 𝐚𝐧𝐝 𝐠𝐢𝐯𝐞 𝐦𝐞 𝐟𝐮𝐥𝐥 𝐫𝐢𝐠𝐡𝐭𝐬 𝐭𝐨 𝐦𝐚𝐤𝐞 𝐦𝐞 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐰𝐞𝐥𝐥.*
 """
 
 
@@ -120,28 +120,28 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅️ 𝐁𝐀𝐂𝐊", callback_data="help_back")]]
                     ),
                 )
                 send_admin_help(
                     update.effective_chat.id,
                     ADMIN[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="admin_back")]]
+                        [[InlineKeyboardButton(text="⬅️ 𝐁𝐀𝐂𝐊", callback_data="admin_back")]]
                     ),
                 )
                 send_user_help(
                     update.effective_chat.id,
                     USER[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="user_back")]]
+                        [[InlineKeyboardButton(text="⬅️ 𝐁𝐀𝐂𝐊", callback_data="user_back")]]
                     ),
                 )
                 send_tools_help(
                     update.effective_chat.id,
                     USER[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="tools_back")]]
+                        [[InlineKeyboardButton(text="⬅️ 𝐁𝐀𝐂𝐊", callback_data="tools_back")]]
                     ),
                 )
 
@@ -164,22 +164,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="➕️ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
+        InlineKeyboardButton(text="𝐀𝐝𝐦𝐢𝐧", callback_data="admin_back"),
         InlineKeyboardButton(
-            text="Users", callback_data="user_back"
+            text="𝐔𝐬𝐞𝐫𝐬", callback_data="user_back"
         ),
     ],
     [
-        InlineKeyboardButton(text="Tools", callback_data="tools_back"),
+        InlineKeyboardButton(text="𝐓𝐨𝐨𝐥𝐬", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Bot Info", callback_data="yone_"
+            text="𝐁𝐨𝐭 𝐈𝐧𝐟𝐨", callback_data="yone_"
         ),
     ],
     [
-        InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩𝐬 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -256,22 +256,22 @@ def yone_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="➕️ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
+        InlineKeyboardButton(text="𝐀𝐝𝐦𝐢𝐧", callback_data="admin_back"),
         InlineKeyboardButton(
-            text="Users", callback_data="user_back"
+            text="𝐔𝐬𝐞𝐫𝐬", callback_data="user_back"
         ),
     ],
     [
         InlineKeyboardButton(text="Tools", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Bot Info", callback_data="yone_"
+            text="𝐁𝐨𝐭 𝐈𝐧𝐟𝐨", callback_data="yone_"
         ),
     ],
     [
-        InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩𝐬 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -284,7 +284,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            stringz = "My dear Owner , I'm Working Again. Thanks to make me live."
+            stringz = "𝐌𝐲 𝐝𝐞𝐚𝐫 𝐎𝐰𝐧𝐞𝐫 , 𝐈'𝐦 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐀𝐠𝐚𝐢𝐧. 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨 𝐦𝐚𝐤𝐞 𝐦𝐞 𝐥𝐢𝐯𝐞."
             dispatcher.bot.sendMessage(f"@{OWNER_ID}", stringz)
         except Unauthorized:
             LOGGER.warning(
